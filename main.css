@@ -1,0 +1,127 @@
+
+:root{
+    --asosiy-body-orqa-rangi:rgb(32, 44, 54);
+    --asosiy-text-rangi:rgb(255, 255, 255);
+    --asosiy-header-orqa-rangi: rgb(43, 56, 68);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--asosiy-body-orqa-rangi);
+    font-family: "Nunito Sans";
+}
+header{
+    background-color: var(--asosiy-header-orqa-rangi);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.06);
+    padding: 24px 0;
+}
+.container{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__btn{
+    background-color: transparent;
+    border: none;
+    color: rgb(255, 255, 255);
+font-size: 16px;
+font-weight: 600;
+line-height: 22px;
+}
+.mobile{
+    display: none;
+}
+@media (max-width:500px){
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    .header__btn{
+        font-size: 12px;
+    }
+}
+.hero{
+    padding: 48px 0;
+}
+.hero__input{
+    padding: 20px 0 20px 32px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 480px;
+    width: 100%;
+    border-radius: 5px;
+box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.05);
+background: var(--asosiy-header-orqa-rangi);
+}
+.input{
+    background-color: transparent;
+    border:none;
+    outline: none;
+    color: var(--asosiy-text-rangi);    
+}
+.hero__box{
+    border-radius: 5px;
+
+box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.03);
+background-color: rgb(43, 56, 68);
+    width: 264px;
+    height: 336px;
+    margin-top: 48px
+}
+.hero__img{
+    border-radius: 5px;
+    width: 267px;
+    height: 160px;
+}
+.hero__title{
+    color:var(--asosiy-text-rangi);
+font-family: Nunito Sans;
+font-size: 18px;
+font-weight: 800;
+line-height: 26px;
+width: 240px;
+}
+.hero__text{
+    color:var(--asosiy-text-rangi);
+font-family: Nunito Sans;
+font-size: 14px;
+font-weight: 300;
+width: 150px;
+height: 64px;
+line-height: 16px;
+margin-bottom:8px;
+}
+.hero__card{
+    padding: 24px 163px 46px 24px;
+}
+span{
+    padding-top: 30px;
+}
+.hero__item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+@media (max-width:975px){
+    .hero__item{
+        display: block;
+    }
+}
+.dark__mode{
+    --asosiy-body-orqa-rangi:#fff;
+    --asosiy-text-rangi:#000;
+    --asosiy-header-orqa-rangi:gray;
+}
